@@ -8,5 +8,12 @@ This repo is a python library for controlling starting stopping and managing sim
 pip install python-iq-sim
 ```
 
+## Generate Docs
+
+```bash
+pydoc-markdown -I iq_sim -m iq_sim --render-toc > docs/iq_sim.md
+```
+
+
 ## Usage
 
