@@ -133,7 +133,9 @@ class iq_sim:
             return sim_id
             
         else:
+
             print("failed")
+            print(result)
             sys.exit(1)
 
     def get_connection(self, sim_id: str):

@@ -1,2 +1,5 @@
 dev_env.sh
 prod_env.sh
+build/
+dist/
+*.egg-info
