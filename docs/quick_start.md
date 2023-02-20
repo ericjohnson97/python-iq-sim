@@ -2,7 +2,8 @@
 
 
 ## Generate an API Key for IQ Cloud Simulator
-<iframe src="https://scribehow.com/embed/Generate_API_Key_for_IQ_Cloud_Simulator__YVeTUa8iS0mwl-HzgVa2Eg?removeLogo=true" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
+follow these instructions to generate an API key for the IQ Cloud Simulator:
+https://scribehow.com/shared/Generate_API_Key_for_IQ_Cloud_Simulator__YVeTUa8iS0mwl-HzgVa2Eg
 
 ## Install Python IQ Sim Package
 
