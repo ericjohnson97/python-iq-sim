@@ -20,7 +20,7 @@
 ## API
 
 * [Rest API](api/rest-api.md)
-* [Quick Start for Python APi](api/quick-start-for-python-api.md)
+* [Quick Start for Python API](api/quick-start-for-python-api.md)
 * [python api](api/python-api.md)
 
 ## Contributing
