@@ -62,6 +62,7 @@ class iq_sim:
             Dict: dict in form of {"running_sims": [{"status": str, "sim_id": str, "fc_instances": str, "creation_time" : str}]}
         """
         r = requests.post(self.url + 'running_sims', headers=self.headers)
+        print(r.text)
         result = json.loads(r.text)
         if "error" in result:
             print(result["error"])
@@ -124,6 +125,8 @@ class iq_sim:
 
         # This is the request that you want to send to the API
         r = requests.post(self.url + 'start', json=sim_config, headers=self.headers)
+        print(r)
+        print(r.text)
         result = json.loads(r.text)
         print(result)
 
@@ -169,8 +172,12 @@ class iq_sim:
         time_start = time.time()
         while time.time() - time_start < timeout:
             result = self.get_running_simulations(sim_id)
-            if result["status"] == "Running":
-                return
+            print(result)
+            if result:
+                if result["status"] == "Running":
+                    return
+                else:
+                    time.sleep(1)
             else:
                 time.sleep(1)
 
